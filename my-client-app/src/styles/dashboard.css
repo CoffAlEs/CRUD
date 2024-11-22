@@ -1,0 +1,156 @@
+/* Variables de colores */
+:root {
+    --orange: #ff5700;
+    --navy-blue: #003366;
+}
+
+/* Estilos globales para asegurar que el fondo de la ventana sea naranja */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--orange); /* Fondo naranja para toda la ventana */
+    font-family: Arial, sans-serif; /* Fuente global */
+}
+
+/* Estilos del título */
+h1 {
+    color: var(--navy-blue); /* Color del título en azul marino */
+}
+
+/* Estilos de los botones */
+button {
+    margin: 10px; /* Espaciado alrededor de cada botón */
+    padding: 10px 20px;
+    background-color: var(--navy-blue); /* Fondo del botón en azul marino */
+    color: #fff; /* Color del texto en blanco */
+    border: none;
+    border-radius: 5px !important;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+    background-color: #002244; /* Color de fondo al pasar el ratón */
+}
+
+/* Separar los botones en un contenedor */
+.button-group {
+    position: relative; /* Cambia a relative para que el contenedor esté posicionado en relación con su contenedor principal */
+    display: flex; /* Utiliza flexbox para alinear los botones en línea */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre cada botón */
+    margin-top: 20px; /* Margen superior para separar los botones del encabezado */
+    width: 100%; /* Asegura que el contenedor de botones ocupe todo el ancho disponible */
+}
+
+
+/* Puedes definir clases específicas para cada botón si necesitas estilos adicionales */
+.button-create {
+    background-color: #4CAF50; /* Verde para el botón de crear */
+}
+
+.button-create:hover {
+    background-color: #45a049; /* Color de fondo al pasar el ratón */
+}
+
+.button-edit {
+    background-color: #ffa500; /* Naranja para el botón de editar */
+}
+
+.button-edit:hover {
+    background-color: #e59400; /* Color de fondo al pasar el ratón */
+}
+
+.button-delete {
+    background-color: #f44336; /* Rojo para el botón de eliminar */
+}
+
+.button-delete:hover {
+    background-color: #c62828; /* Color de fondo al pasar el ratón */
+}
+
+
+/* Estilos de la sección de edición */
+.edit-section {
+    margin: 20px 0;
+}
+
+.edit-section label {
+    margin-right: 10px;
+    color: #fff; /* Color del texto en blanco */
+}
+
+.edit-section select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Contenedor para la tabla */
+.table-container {
+    overflow-x: auto !important; /* Permite el desplazamiento horizontal si es necesario */
+    margin-top: 20px;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Fondo blanco para la tabla */
+    color: var(--navy-blue); /* Color del texto en azul marino */
+    border-left: 350px solid #fff !important; /* Borde izquierdo de la tabla para una separación visual */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--navy-blue); /* Fondo de los encabezados en azul marino */
+    color: #fff; /* Color del texto en blanco */
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilos para el overlay del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background: #f5f5f5 !important; /* Fondo blanco para el contenido del modal */
+    border-radius: 8px !important;
+    padding: 20px;
+    max-width: 90vw; /* Máximo ancho del modal en vista del ancho del viewport */
+    max-height: 80vh; /* Máxima altura del modal en vista de la altura del viewport */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es mayor que la altura del modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de elevación */
+}
+
+/* Estilos para el formulario dentro del modal */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content form div {
+    margin-bottom: 15px;
+}

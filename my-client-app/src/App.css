@@ -1,0 +1,50 @@
+/* Variables de colores */
+:root {
+  --navy-blue: #003366;
+}
+
+/* Estilos globales para asegurar que el fondo de la ventana sea naranja */
+html, body {
+  height: 100%; /* Asegura que html y body ocupen toda la altura del viewport */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina padding por defecto */
+  background-color: var(--navy-blue); /* Fondo naranja para toda la ventana */
+}
+
+/* Estilos para la interfaz de bienvenida */
+.App {
+  color: #ff5700; /* Color de texto blanco */
+  min-height: 100vh; /* Asegura que la altura mínima sea la del viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Centra el texto */
+}
+
+/* Estilos del header */
+.App-header {
+  margin-bottom: 20px; /* Espacio debajo del header */
+}
+
+/* Estilos del logo */
+.App-logo {
+  height: 200px; /* Ajusta el tamaño del logo a 200px */
+  margin-bottom: 20px; /* Espacio debajo del logo */
+}
+
+/* Estilos del botón */
+.App-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff5700; /* Fondo del botón en azul marino */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.App-button:hover {
+  background-color: #002244; /* Color de fondo al pasar el ratón */
+}

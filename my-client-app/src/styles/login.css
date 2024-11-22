@@ -1,0 +1,72 @@
+/* Variables de colores */
+:root {
+    --navy-blue: #003366;
+}
+
+/* Estilos globales para asegurar que el fondo de la ventana sea naranja */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ff5700; /* Fondo naranja para toda la ventana */
+}
+
+/* Estilos para la página de login */
+.login-container {
+    background-color: var(--navy-blue); /* Fondo del contenedor del login */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    width: 100%; /* Asegura que el contenedor ocupe el ancho disponible */
+    padding: 30px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    margin: 20px auto; /* Centrar el contenedor en la página */
+    text-align: center; /* Centra el texto en el contenedor */
+    color: #fff; /* Color del texto blanco */
+}
+
+/* Estilos del logo */
+.login-logo {
+    height: 200px; /* Ajusta el tamaño del logo a 200px */
+    margin-bottom: 20px; /* Espacio debajo del logo */
+}
+
+/* Estilos del título */
+.login-title {
+    color: #fff; /* Color del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilos del formulario */
+.login-form {
+    display: flex;
+    flex-direction: column; /* Columna para alinear los inputs verticalmente */
+}
+
+/* Estilos de los inputs */
+.login-input {
+    padding: 10px;
+    margin-bottom: 15px; /* Espacio entre inputs */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados en los inputs */
+    font-size: 16px; /* Tamaño del texto en los inputs */
+    width: 100%; /* Asegura que los inputs ocupen el ancho disponible */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Estilos del botón */
+.login-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff5700; /* Fondo del botón en naranja */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    width: 100%; /* Asegura que el botón ocupe el ancho disponible */
+}
+
+.login-button:hover {
+    background-color: #cc4600; /* Color de fondo al pasar el ratón */
+}
